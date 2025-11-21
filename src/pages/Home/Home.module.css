@@ -100,17 +100,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 200px;
-  height: 200px;
-  background: var(--light-bg);
-  border-radius: 20px;
-  border: 1px solid var(--border-color);
+  width: 300px;
+  height: 300px;
 }
 
-.codeIcon {
-  width: 80px;
-  height: 80px;
-  color: var(--color-primary);
+.illustration img {
+  width: 300px;
+  height: 300px;
 }
 
 .features {
@@ -168,14 +164,7 @@
   }
   
   .illustration {
-    width: 150px;
-    height: 150px;
     margin: 0 auto;
-  }
-  
-  .codeIcon {
-    width: 60px;
-    height: 60px;
   }
   
   .actions {

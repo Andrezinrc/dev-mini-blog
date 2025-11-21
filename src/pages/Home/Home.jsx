@@ -24,7 +24,7 @@ export default function Home() {
         </div>
         
         <div className={styles.illustration}>
-          <FiCode className={styles.codeIcon} />
+          <img src="/assets/img/dev.png" />
         </div>
       </section>
 

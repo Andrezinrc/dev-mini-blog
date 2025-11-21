@@ -39,5 +39,5 @@ export default function App() {
       </main>
       <Components.Footer />
     </div>
-  );
+  )
 }

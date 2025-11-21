@@ -1,6 +1,6 @@
 ---
 id: "post_1762367228789"
-title: "Olá Mundo - Meu Primeiro Post no DreeBlog"
+title: "Olá Mundo - Meu Primeiro Post"
 description: "Primeiro post de teste do blog estático com markdown e JSON"
 author: "André Moreira"
 github: "Andrezinrc"
