@@ -1,5 +1,6 @@
 import styles from '../../styles/shared/posts/Posts.module.css';
 import { FiX, FiMessageCircle, FiFacebook, FiLinkedin, FiTwitter, FiLink } from 'react-icons/fi';
+import {useNotify} from '../../context/NotificationProvider';
 
 export default function ShareModal({
   isOpen,
@@ -9,6 +10,8 @@ export default function ShareModal({
   onCopyLink,
   dataStructure = 'default'
 }) {
+  
+  const {notify} = useNotify();
   
   const handleOverlayClick = (e) => {
     if (e.target === e.currentTarget) {
@@ -25,7 +28,7 @@ export default function ShareModal({
   
   const getShareLink = () => {
     if (!post) return '';
-    return `https://dreeblog.vercel.app/post/${getPostData('slug')}?id=${getPostData('id')}`;
+    return `https://andrezin-blog.vercel.app/post/${getPostData('slug')}?id=${getPostData('id')}`;
   };
   
   const getShareText = () => {
@@ -84,7 +87,10 @@ export default function ShareModal({
           
           <button 
             className={styles.shareOption}
-            onClick={() => onCopyLink(getShareLink())}
+            onClick={() => {
+              onCopyLink(getShareLink());
+              notify("Link copiado", '#3b82f6');
+            }}
           >
             <FiLink size={20} />
             Copiar Link
