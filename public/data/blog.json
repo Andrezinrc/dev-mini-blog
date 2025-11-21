@@ -1,0 +1,21 @@
+{
+  "posts": [
+    {
+      "frontmatter": {
+        "id": "post_1762367228789",
+        "title": "Olá Mundo - Meu Primeiro Post no DreeBlog",
+        "description": "Primeiro post de teste do blog estático com markdown e JSON",
+        "author": "André Moreira",
+        "github": "Andrezinrc",
+        "date": "2025-11-20",
+        "category": "tutorial",
+        "tags": ["blog", "markdown"],
+        "published": true
+      },
+      "content": "# Olá Mundo - Meu Primeiro Post\n\nEste é o primeiro post de teste\n## Como funciona\n\n- Posts escritos em **markdown** com frontmatter\n- Scripts JavaScript geram **JSON estático**\n- Deploy na **Vercel** como site estático\n\n## Exemplo de código\n\n```javascript\n// Script que gera os JSONs\nfunction generateBlogData() {\n  const posts = getAllMarkdownPosts();\n  return { posts, lastUpdated: new Date() };\n}```",
+      "slug": "post_1762367228789"
+    }
+  ],
+  "lastUpdated": "2025-11-20T00:00:00.000Z",
+  "totalPosts": 1
+}

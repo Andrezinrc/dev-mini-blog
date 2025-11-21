@@ -1,0 +1,17 @@
+.notification {
+  position: fixed;
+  top: 150px;
+  right: 20px;
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  animation: slideIn 0.3s, fadeOut 0.5s 1.5s forwards;
+  z-index: 1000;
+}
+
+.notification-icon {
+  font-size: 1.2rem;
+}
