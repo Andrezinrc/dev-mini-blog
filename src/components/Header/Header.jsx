@@ -55,7 +55,6 @@ export default function Header() {
     setShowResults(false);
   };
   
-m
   useEffect(() => {
     const handleEscKey = (e) => {
       if (e.key === 'Escape') {

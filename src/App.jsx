@@ -6,7 +6,7 @@ import * as Pages from './routes/pages';
 
 import {useThemeManager} from './hooks/useThemeManager';
 
-function App() {
+export default function App() {
   const [isLoading, setIsLoading] = useState(true);
  
   useThemeManager();
@@ -22,11 +22,11 @@ function App() {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100dvh' }}>
       <Components.ScrollToTop />
-      <Components.LayoutManager>
-        <main>
-          {isLoading ? (
-            <Components.Load />
-          ) : (
+      <Components.Header />
+      <main>
+        {isLoading ? (
+          <Components.Load />
+        ) : (
             <Routes>
               <Route path="/" element={<Pages.Home />} replace />
               <Route path="/posts" element={<Pages.Posts />} />
@@ -36,10 +36,8 @@ function App() {
               <Route path="*" element={<Pages.NotFound />} />
             </Routes>
           )}
-        </main>
-      </Components.LayoutManager>
+      </main>
+      <Components.Footer />
     </div>
-  )
+  );
 }
-
-export default App;
