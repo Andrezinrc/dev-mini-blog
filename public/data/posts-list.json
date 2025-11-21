@@ -10,6 +10,17 @@
       "category": "tutorial",
       "tags": ["blog", "markdown"],
       "slug": "post_1762367228789"
+    },
+    {
+      "id": "post_1762367228791",
+      "title": "Desenvolvendo um Scanner de Antivírus em C",
+      "description": "Conheça meu projeto de scanner de antivírus desenvolvido em C com detecção por assinatura e suporte a EICAR",
+      "author": "André Moreira",
+      "github": "Andrezinrc",
+      "date": "2025-11-22",
+      "category": "projetos",
+      "tags": ["c", "segurança", "antivirus", "programação", "scanner"],
+      "slug": "post_1762367228791"
     }
   ]
 }
