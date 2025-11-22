@@ -35,6 +35,21 @@
   border-bottom: 1px solid var(--border-color);
 }
 
+.imageContainer {
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.postImage {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 400px;
+  object-fit: cover;
+}
+
 .title {
   color: var(--text-color);
   font-size: 2.25rem;

@@ -6,10 +6,11 @@
     "author": "André Moreira",
     "github": "Andrezinrc",
     "date": "2025-11-20",
+    "image": "",
     "category": "tutorial",
     "tags": ["blog", "markdown"],
     "published": true
   },
   "content": "# Olá Mundo - Meu Primeiro Post\n\nEste é o primeiro post de teste\n## Como funciona\n\n- Posts escritos em **markdown** com frontmatter\n- Scripts JavaScript geram **JSON estático**\n- Deploy na **Vercel** como site estático\n\n## Exemplo de código\n\n```javascript\n// Script que gera os JSONs\nfunction generateBlogData() {\n  const posts = getAllMarkdownPosts();\n  return { posts, lastUpdated: new Date() };\n}```",
-  "slug": "post_1762367228789"
+  "slug": "teste-de-post"
 }

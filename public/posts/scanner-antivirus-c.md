@@ -5,6 +5,7 @@ description: "Conheça meu projeto de scanner de antivírus desenvolvido em C co
 author: "André Moreira"
 github: "Andrezinrc"
 date: "2025-11-22"
+image: "/assets/images/posts/scanner-antivirus-c/illustration.jpeg"
 category: "projetos"
 tags: ["c", "segurança", "antivirus", "programação", "scanner"]
 published: true

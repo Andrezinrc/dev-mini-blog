@@ -7,6 +7,7 @@
       "author": "André Moreira",
       "github": "Andrezinrc",
       "date": "2025-11-20",
+      "image": "",
       "category": "tutorial",
       "tags": ["blog", "markdown"],
       "slug": "post_1762367228789"
@@ -18,6 +19,7 @@
       "author": "André Moreira",
       "github": "Andrezinrc",
       "date": "2025-11-22",
+      "image": "/assets/images/posts/scanner-antivirus-c/illustration.jpeg",
       "category": "projetos",
       "tags": ["c", "segurança", "antivirus", "programação", "scanner"],
       "slug": "post_1762367228791"

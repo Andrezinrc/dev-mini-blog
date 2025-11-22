@@ -4,7 +4,7 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import rehypeHighlight from 'rehype-highlight';
 import styles from './Post.module.css';
-import {blogAPI} from '../../api';
+import { blogAPI } from '../../api';
 import 'highlight.js/styles/github-dark.css';
 import Comments from '../../components/Comments/Comments';
 
@@ -87,6 +87,8 @@ export default function Post() {
     );
   }
   
+  const hasImage = post.frontmatter.image && post.frontmatter.image.trim() !== '';
+  
   return (
     <div className={styles.page}>
       <button onClick={handleBack} className={styles.backButton}>
@@ -95,6 +97,16 @@ export default function Post() {
 
       <article className={styles.post}>
         <header className={styles.header}>
+          {hasImage && (
+            <div className={styles.imageContainer}>
+              <img 
+                src={post.frontmatter.image} 
+                alt={post.frontmatter.title}
+                className={styles.postImage}
+              />
+            </div>
+          )}
+          
           <h1 className={styles.title}>{post.frontmatter.title}</h1>
           
           <div className={styles.meta}>
@@ -120,7 +132,6 @@ export default function Post() {
           )}
         </header>
 
-        {/* Post renderizado com ReactMarkdown */}
         <div className={styles.content}>
           <ReactMarkdown
             remarkPlugins={[remarkGfm]}

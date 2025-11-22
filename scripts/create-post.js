@@ -32,12 +32,15 @@ function createNewPost(title) {
       author: "Seu nome"
       github: "Usuario-github"
       date: "${new Date().toISOString().split('T')[0]}"
+      image: "/ima/posts/${slug}/exemplo.jpg"
       category: "tutorial"
       tags: ["exemplo"]
       published: false
     ---
       
     # ${title}
+    
+    ![Imagem de capa](/images/posts/${slug}/exemplo.jpg)
       
     Comece a escrever seu post aqui...
     

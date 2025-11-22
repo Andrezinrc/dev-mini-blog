@@ -24,7 +24,7 @@ export default function Home() {
         </div>
         
         <div className={styles.illustration}>
-          <img src="/assets/img/dev.png" />
+          <img src="/assets/images/dev.png" />
         </div>
       </section>
 

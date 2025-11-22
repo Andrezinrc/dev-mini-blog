@@ -7,6 +7,7 @@ github: "Andrezinrc"
 date: "2025-11-20"
 category: "tutorial"
 tags: ["blog", "markdown"]
+image: ""
 published: true
 ---
 

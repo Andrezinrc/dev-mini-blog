@@ -15,11 +15,11 @@ function parseMarkdownFile(filePath) {
   const content = fs.readFileSync(filePath, 'utf8');
   const slug = path.basename(filePath, '.md');
   
-  const frontmatterRegex = /^---\n([\s\S]*?)\n---\n([\s\S]*)$/;
+  const frontmatterRegex = /^---\s*\n([\s\S]*?)\n---\s*\n([\s\S]*)$/;
   const match = content.match(frontmatterRegex);
   
   if (!match) {
-    throw new Error(`Formato markdown invalido: ${filePath}`);
+    throw new Error(`Formato markdown inválido: ${filePath}`);
   }
   
   const frontmatterRaw = match[1];
@@ -27,19 +27,23 @@ function parseMarkdownFile(filePath) {
   
   const frontmatter = {};
   frontmatterRaw.split('\n').forEach(line => {
+    if (line.trim() === '') return;
+    
     const [key, ...valueParts] = line.split(':');
     if (key && valueParts.length) {
       let value = valueParts.join(':').trim();
+     
       if (value.startsWith('"') && value.endsWith('"')) {
         value = value.slice(1, -1);
       }
-     
+    
+      value = value.trim();
+      
       if (value === 'true' || value === 'false') {
         frontmatter[key.trim()] = value === 'true';
       } else if (!isNaN(Number(value)) && value !== '') {
         frontmatter[key.trim()] = Number(value);
       } else if (key.trim() === 'tags' && value.startsWith('[') && value.endsWith(']')) {
-        
         try {
           frontmatter[key.trim()] = JSON.parse(value);
         } catch (error) {
@@ -50,6 +54,10 @@ function parseMarkdownFile(filePath) {
       }
     }
   });
+  
+  if (frontmatter.image && frontmatter.image.includes('/ima/posts/')) {
+    frontmatter.image = "";
+  }
   
   return {
     frontmatter,
@@ -117,6 +125,7 @@ function generateAllJsonFiles() {
     author: post.frontmatter.author,
     github: post.frontmatter.github,
     date: post.frontmatter.date,
+    image: post.frontmatter.image,
     category: post.frontmatter.category,
     tags: post.frontmatter.tags,
     slug: post.slug
@@ -128,8 +137,15 @@ function generateAllJsonFiles() {
   );
   
   console.log(`Gerados ${blogData.posts.length} posts em:`);
-  console.log(`  public/data/blog.json`);
-  console.log(`  public/data/posts-list.json`);
-  console.log(`  public/data/post-*.json (${blogData.posts.length} arquivos)`);
+  console.log(`   public/data/blog.json`);
+  console.log(`   public/data/posts-list.json`);
+  console.log(`   public/data/post-*.json (${blogData.posts.length} arquivos)`);
+ 
+  console.log('\nStatus das imagens:');
+  blogData.posts.forEach(post => {
+    const hasImage = post.frontmatter.image && post.frontmatter.image !== '';
+    console.log(`   ${post.slug}: ${hasImage ? 'Com imagem' : 'Sem imagem'}`);
+  });
 }
+
 generateAllJsonFiles();
