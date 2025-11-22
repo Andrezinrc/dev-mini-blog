@@ -13,6 +13,7 @@ const Footer = () => {
           <div className={styles.socialLinks}>
             <a href="https://github.com/Andrezinrc" className={styles.socialLink}>GitHub</a>
             <a href="https://instagram.com/andrezin.dev" className={styles.socialLink}>Instagram</a>
+            <a href="https://andrezin-dev.vercel.app/" className={styles.socialLink}>Portfólio</a>
           </div>
         </div>
 
@@ -23,6 +24,7 @@ const Footer = () => {
             <Link to="/about" className={styles.footerLink}>Sobre</Link>
             <Link to="/posts" className={styles.footerLink}>Blog</Link>
             <Link to="/tags" className={styles.footerLink}>Tags</Link>
+            <Link to="/favorites" className={styles.footerLink}>Favoritos</Link>
           </nav>
         </div>
         

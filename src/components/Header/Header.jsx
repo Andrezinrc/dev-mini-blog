@@ -198,7 +198,7 @@ export default function Header() {
                 <FaTags className={styles.mobileIcon} />
                 Tags
               </Link>
-              <Link to="/favorites" className={styles.navLink}>
+              <Link to="/favorites" className={styles.navLink} onClick={closeMenu}>
                 <FaHeart className={styles.navIcon} />
                 Favoritos
               </Link>
