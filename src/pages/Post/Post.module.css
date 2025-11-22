@@ -2,7 +2,7 @@
   width: 100%;
   margin: 0 auto;
   padding: var(--spacing-lg);
-  background: var(--bg-white);
+  background: var(--bg-gray);
   min-height: 100vh;
 }
 

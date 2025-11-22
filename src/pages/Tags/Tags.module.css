@@ -3,7 +3,7 @@
   margin: 0 auto;
   padding: var(--spacing-lg) var(--spacing);
   min-height: 80vh;
-  background: var(--bg-white);
+  background: var(--bg-gray);
 }
 
 .header {

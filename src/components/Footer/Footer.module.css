@@ -1,6 +1,6 @@
 .footer {
-  background: var(--bg-gray);
-  border-top: 1px solid var(--border-color);
+  background: var(--bg-white);
+  border-top: 0.5px solid var(--border-color);
   margin-top: auto;
   padding-top: var(--spacing-lg);
 }
@@ -85,10 +85,10 @@
 }
 
 .footerBottom {
-  border-top: 1px solid var(--border-color);
+  border-top: 0.5px solid var(--border-color);
   padding: var(--spacing) var(--spacing);
   text-align: center;
-  background: var(--bg-white);
+  background: var(--bg-gray);
 }
 
 .copyright {

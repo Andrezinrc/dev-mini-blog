@@ -19,11 +19,11 @@
 
 .header {
   background: var(--bg-white);
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 0.5px solid var(--border-color);
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
 }
 
 .container {
@@ -276,8 +276,8 @@
   left: 0;
   right: 0;
   background: var(--bg-white);
-  border-bottom: 1px solid var(--border-color);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-bottom: 0.5px solid var(--border-color);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
   padding: var(--spacing);
   opacity: 0;
   visibility: hidden;
