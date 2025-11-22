@@ -128,26 +128,6 @@ export default function Header() {
                 )}
               </div>
             </div>
-
-            {/* Menu Desktop */}
-            <nav className={styles.nav}>
-              <Link to="/" className={styles.navLink}>
-                <FaHome className={styles.navIcon} />
-                Home
-              </Link>
-              <Link to="/posts" className={styles.navLink}>
-                <FaBook className={styles.navIcon} />
-                Posts
-              </Link>
-              <Link to="/tags" className={styles.navLink}>
-                <FaTags className={styles.navIcon} />
-                Tags
-              </Link>
-              <Link to="/favorites" className={styles.navLink}>
-                <FaHeart className={styles.navIcon} />
-                Favoritos
-              </Link>
-            </nav>
           </div>
           
           <div className={styles.controls}>
@@ -159,13 +139,13 @@ export default function Header() {
               <FaSun className={styles.sun} />
               <FaMoon className={styles.moon} />
             </button>
-            
+
             <button 
               className={styles.menuToggle}
               onClick={toggleMenu}
-              aria-label={isMenuOpen ? "Fechar menu" : "Abrir menu"}
+              aria-label={isMenuOpen ? "Fechar pesquisa" : "Abrir pesquisa"}
             >
-              {isMenuOpen ? <FaTimes /> : <FaBars />}
+              {isMenuOpen ? <FaTimes /> : <FaSearch />}
             </button>
           </div>
 
@@ -184,25 +164,6 @@ export default function Header() {
                 />
               </div>
             </div>
-            
-            <nav className={styles.mobileNav}>
-              <Link to="/" className={styles.mobileLink} onClick={closeMenu}>
-                <FaHome className={styles.mobileIcon} />
-                Home
-              </Link>
-              <Link to="/posts" className={styles.mobileLink} onClick={closeMenu}>
-                <FaBook className={styles.mobileIcon} />
-                Posts
-              </Link>
-              <Link to="/tags" className={styles.mobileLink} onClick={closeMenu}>
-                <FaTags className={styles.mobileIcon} />
-                Tags
-              </Link>
-              <Link to="/favorites" className={styles.navLink} onClick={closeMenu}>
-                <FaHeart className={styles.navIcon} />
-                Favoritos
-              </Link>
-            </nav>
             
             <div className={`${styles.mobileSearchResults} ${showResults ? styles.active : ''}`}>
               {searchResults.length > 0 ? (
@@ -229,6 +190,36 @@ export default function Header() {
           </div>
         </div>
       </header>
+
+      {/* Menu Bottom Fixo */}
+      <nav className={styles.menu}>
+        <ul className={styles.navList}>
+          <li>
+            <Link to="/" className={styles.navLink}>
+              <FaHome className={styles.navIcon} />
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link to="/posts" className={styles.navLink}>
+              <FaBook className={styles.navIcon} />
+              Posts
+            </Link>
+          </li>
+          <li>
+            <Link to="/tags" className={styles.navLink}>
+              <FaTags className={styles.navIcon} />
+              Tags
+            </Link>
+          </li>
+          <li>
+            <Link to="/favorites" className={styles.navLink}>
+              <FaHeart className={styles.navIcon} />
+              Favoritos
+            </Link>
+          </li>
+        </ul>
+      </nav>
     </>
   );
 }
