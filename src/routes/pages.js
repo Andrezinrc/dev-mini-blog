@@ -4,3 +4,4 @@ export {default as Posts} from '../pages/Posts/Posts';
 export {default as Post} from '../pages/Post/Post';
 export {default as Tags} from '../pages/Tags/Tags';
 export {default as TagPosts} from '../pages/TagPosts/TagPosts';
+export {default as Favorites } from '../pages/Favorites/Favorites';

@@ -1,7 +1,18 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useTheme } from '../../hooks/useTheme';
-import { FaSun, FaMoon, FaBars, FaTimes, FaBook, FaEdit, FaHome, FaInfoCircle, FaSearch, FaTags } from 'react-icons/fa';
+import {
+  FaSun,
+  FaMoon, 
+  FaBars, 
+  FaTimes, 
+  FaBook, 
+  FaEdit, 
+  FaHome, 
+  FaInfoCircle, 
+  FaSearch, 
+  FaTags, 
+  FaHeart } from 'react-icons/fa';
 import { blogAPI } from '../../api';
 import styles from './Header.module.css';
 
@@ -132,6 +143,10 @@ export default function Header() {
                 <FaTags className={styles.navIcon} />
                 Tags
               </Link>
+              <Link to="/favorites" className={styles.navLink}>
+                <FaHeart className={styles.navIcon} />
+                Favoritos
+              </Link>
             </nav>
           </div>
           
@@ -182,6 +197,10 @@ export default function Header() {
               <Link to="/tags" className={styles.mobileLink} onClick={closeMenu}>
                 <FaTags className={styles.mobileIcon} />
                 Tags
+              </Link>
+              <Link to="/favorites" className={styles.navLink}>
+                <FaHeart className={styles.navIcon} />
+                Favoritos
               </Link>
             </nav>
             
