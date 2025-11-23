@@ -20,8 +20,6 @@ export default function Home() {
               <FaBook className={styles.buttonIcon} />
               Ver Posts
             </Link>
-          </div>
-          <div className={styles.actions}>
             <Link to="/about" className={styles.secondaryButton}>
               <FaUser className={styles.buttonIcon} />
               Sobre Mim
