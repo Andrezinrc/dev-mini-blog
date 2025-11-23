@@ -73,8 +73,8 @@
 }
 
 .secondaryButton {
-  border: 1px solid var(--border-color);
-  color: var(--text-color);
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
   padding: 14px 28px;
   border-radius: var(--border-radius);
   text-decoration: none;
@@ -86,8 +86,8 @@
 }
 
 .secondaryButton:hover {
-  border-color: var(--color-primary);
-  background: var(--light-bg);
+  background: var(--color-primary);
+  color: white;
   transform: translateY(-2px);
 }
 

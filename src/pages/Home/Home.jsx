@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Home.module.css';
 import { Link } from 'react-router-dom';
-import { FaBook, FaEdit, FaRocket, FaLightbulb, FaUsers, FaSun, FaMoon } from 'react-icons/fa';
+import { FaBook, FaUser, FaEdit, FaRocket, FaLightbulb, FaUsers, FaSun, FaMoon } from 'react-icons/fa';
 import {FiCode} from 'react-icons/fi';
 
 export default function Home() {
@@ -19,6 +19,12 @@ export default function Home() {
             <Link to="/posts" className={styles.primaryButton}>
               <FaBook className={styles.buttonIcon} />
               Ver Posts
+            </Link>
+          </div>
+          <div className={styles.actions}>
+            <Link to="/about" className={styles.secondaryButton}>
+              <FaUser className={styles.buttonIcon} />
+              Sobre Mim
             </Link>
           </div>
         </div>
