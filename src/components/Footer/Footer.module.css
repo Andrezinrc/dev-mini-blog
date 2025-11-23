@@ -25,6 +25,7 @@
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: var(--spacing-sm);
+  font-family: "Bebas Neue", sans-serif;
 }
 
 .footerTitle span{

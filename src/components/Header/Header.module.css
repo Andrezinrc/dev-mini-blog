@@ -41,6 +41,7 @@
   color: var(--text-color);
   text-decoration: none;
   transition: var(--transition);
+  font-family: "Bebas Neue", sans-serif;
 }
 
 .logo:hover {
@@ -505,7 +506,7 @@
 
 @media (max-width: 480px) {
   .logo {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
   }
   
   .container {
