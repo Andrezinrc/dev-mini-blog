@@ -7,7 +7,7 @@ export const useTheme = () => {
     const saved = localStorage.getItem('theme');
     if (saved) return saved;
     
-    return dark;
+    return 'dark';
   });
   
   useEffect(() => {
