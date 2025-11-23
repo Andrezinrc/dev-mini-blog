@@ -51,6 +51,7 @@
   display: flex;
   gap: var(--spacing);
   flex-wrap: wrap;
+  gap: 10px;
 }
 
 .primaryButton {
