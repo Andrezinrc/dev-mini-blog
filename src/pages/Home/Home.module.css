@@ -34,6 +34,7 @@
   font-weight: 700;
   margin-bottom: var(--spacing);
   line-height: 1.1;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 .titleAccent {
@@ -41,6 +42,7 @@
 }
 
 .subtitle {
+  font-family: 'Montserrat', sans-serif;
   color: var(--text-light);
   font-size: 1.25rem;
   margin-bottom: var(--spacing-lg);

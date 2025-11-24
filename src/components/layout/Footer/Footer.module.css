@@ -30,6 +30,7 @@
 
 .footerTitle span{
   color: var(--color-primary);
+  font-family: "Bebas Neue", sans-serif;
 }
 
 .footerDescription {

@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState } from 'react';
-import Notification from '../components/Notification/Notification';
+import Notification from '../components/common/Notification/Notification';
 import {useNotificationTimer} from '../hooks/useNotificationTimer';
 
 const NotificationContext = createContext();

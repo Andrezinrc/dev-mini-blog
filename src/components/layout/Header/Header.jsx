@@ -87,7 +87,7 @@ export default function Header() {
       <header className={styles.header}>
         <div className={styles.container}>
           <Link to="/" className={styles.logo} onClick={closeMenu}>
-            Andrezin.<span className={styles.logoAccent}>blog</span>
+            [Andrezin.<span className={styles.logoAccent}>blog</span>]
           </Link>
 
           <div className={styles.mainContent}>

@@ -3,6 +3,7 @@ id: "post_1762458923567"
 title: "Do 'funciona' ao 'fica bom' - a evolução do código"
 description: "Como nosso código melhora naturalmente com a experiência, e está tudo bem não acertar de primeira"
 author: "André Moreira"
+github: "Andrezinrc"
 date: "2025-11-23"
 category: "experiência"
 tags: ["código", "aprendizado", "refatoração"]

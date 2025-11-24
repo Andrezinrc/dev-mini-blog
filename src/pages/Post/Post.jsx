@@ -6,7 +6,7 @@ import rehypeHighlight from 'rehype-highlight';
 import styles from './Post.module.css';
 import { blogAPI } from '../../api';
 import 'highlight.js/styles/github-dark.css';
-import Comments from '../../components/Comments/Comments';
+import Comments from '../../components/common/Comments/Comments';
 
 export default function Post() {
   const [post, setPost] = useState(null);
