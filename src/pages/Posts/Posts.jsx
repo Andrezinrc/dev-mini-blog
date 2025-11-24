@@ -3,9 +3,9 @@ import { useNavigate } from 'react-router-dom';
 import styles from '../../styles/shared/posts/Posts.module.css';
 import { blogAPI } from '../../api';
 import { useNotify } from '../../context/NotificationProvider';
-import PostsHeader from '../../components/Posts/PostsHeader';
-import PostsGrid from '../../components/Posts/PostsGrid';
-import ShareModal from '../../components/Posts/ShareModal';
+import PostsHeader from '../../components/blog/PostsHeader';
+import PostsGrid from '../../components/blog/PostsGrid';
+import ShareModal from '../../components/blog/ShareModal';
 import {usePostsLogic} from '../../hooks/usePostsLogic';
 
 export default function Posts() {

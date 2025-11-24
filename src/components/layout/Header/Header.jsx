@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { useTheme } from '../../hooks/useTheme';
+import { useTheme } from '../../../hooks/useTheme';
 import {
   FaSun,
   FaMoon, 
@@ -13,7 +13,7 @@ import {
   FaSearch, 
   FaTags, 
   FaHeart } from 'react-icons/fa';
-import { blogAPI } from '../../api';
+import { blogAPI } from '../../../api';
 import styles from './Header.module.css';
 
 export default function Header() {
