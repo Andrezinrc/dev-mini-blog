@@ -22,24 +22,24 @@ export default function App() {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100dvh' }}>
       <Components.ScrollToTop />
-      <Components.Header />
-      <main>
-        {isLoading ? (
-          <Components.Load />
-        ) : (
-            <Routes>
-              <Route path="/" element={<Pages.Home />} replace />
-              <Route path="/about" element={<Pages.About />} />
-              <Route path="/posts" element={<Pages.Posts />} />
-              <Route path="/post/:slug" element={<Pages.Post />} />
-              <Route path="/tags" element={<Pages.Tags />} />
-              <Route path="/tags/:tagName" element={<Pages.TagPosts />} />
-              <Route path="/favorites" element={<Pages.Favorites />} />
-              <Route path="*" element={<Pages.NotFound />} />
-            </Routes>
-          )}
-      </main>
-      <Components.Footer />
+      <Components.Layout>
+        <main>
+          {isLoading ? (
+            <Components.Load />
+          ) : (
+              <Routes>
+                <Route path="/" element={<Pages.Home />} replace />
+                <Route path="/about" element={<Pages.About />} />
+                <Route path="/posts" element={<Pages.Posts />} />
+                <Route path="/post/:slug" element={<Pages.Post />} />
+                <Route path="/tags" element={<Pages.Tags />} />
+                <Route path="/tags/:tagName" element={<Pages.TagPosts />} />
+                <Route path="/favorites" element={<Pages.Favorites />} />
+                <Route path="*" element={<Pages.NotFound />} />
+              </Routes>
+            )}
+        </main>
+      </Components.Layout>
     </div>
   )
 }
