@@ -2,19 +2,23 @@
   "posts": [
     {
       "frontmatter": {
-        "id": "post_1762367228789",
-        "title": "Olá Mundo - Meu Primeiro Post",
-        "description": "Primeiro post de teste do blog estático com markdown e JSON",
+        "id": "post_1762458923567",
+        "title": "Do 'funciona' ao 'fica bom' - a evolução do código",
+        "description": "Como nosso código melhora naturalmente com a experiência, e está tudo bem não acertar de primeira",
         "author": "André Moreira",
         "github": "Andrezinrc",
-        "date": "2025-11-20",
+        "date": "2025-11-22",
+        "category": "experiência",
+        "tags": [
+          "código",
+          "aprendizado",
+          "refatoração"
+        ],
         "image": "",
-        "category": "tutorial",
-        "tags": ["blog", "markdown"],
         "published": true
       },
-      "content": "# Olá Mundo - Meu Primeiro Post\n\nEste é o primeiro post de teste\n## Como funciona\n\n- Posts escritos em **markdown** com frontmatter\n- Scripts JavaScript geram **JSON estático**\n- Deploy na **Vercel** como site estático\n\n## Exemplo de código\n\n```javascript\n// Script que gera os JSONs\nfunction generateBlogData() {\n  const posts = getAllMarkdownPosts();\n  return { posts, lastUpdated: new Date() };\n}```",
-      "slug": "post_1762367228789"
+      "content": "# Do 'funciona' ao 'fica bom' - a evolução do código\n\nLembro do meu primeiro código que \"funcionava\". Era uma bagunça, mas aquilo me deu um baita orgulho. Com o tempo, fui entendendo que existe uma distância natural entre o código que funciona e o código que fica bom.\n\n## As fases que todo dev passa\n\n### Fase 1: \"Funciona!\" 🎉\n```javascript\n// Tudo em uma função só, 200 linhas\nfunction fazerTudo() {\n  // ... lógica, UI, dados, tudo misturado\n}\n```\n\n### Fase 2: \"Ah, talvez dê para separar\" 🤔\n\n```javascript\n// Começando a quebrar em funções\nfunction processarDados() { /* ... */ }\nfunction renderizarUI() { /* ... */ }\n```\n\n### Fase 3: \"Clean Code me assombra\" 😅\n\n```javascript\n// Agora com nomes descritivos e responsabilidades únicas\nfunction validarFormularioUsuario() { /* ... */ }\nfunction formatarDataBrasileira() { /* ... */ }\n```\n\n## O que muda com o tempo\n\n· Menos pressa, mais clareza - Entendemos que tempo gasto pensando na estrutura economiza horas depois\n· Legibilidade primeiro - Código é lido muito mais que escrito\n· Não reinventamos a roda - Padrões e boas práticas começam a fazer sentido\n\n## E está tudo bem!\n\nA evolução é natural. O código de hoje sempre será melhor que o de 6 meses atrás - e pior que o de 6 meses no futuro.\n\nO importante é continuar codando e refatorando. Cada linha escrita é um passo nessa jornada.\n\nSeu código de amanhã agradece pelo que você aprende hoje.",
+      "slug": "evolucao-do-codigo"
     },
     {
       "frontmatter": {
@@ -26,13 +30,38 @@
         "date": "2025-11-22",
         "image": "/assets/images/posts/scanner-antivirus-c/illustration.jpeg",
         "category": "projetos",
-        "tags": ["c", "segurança", "antivirus", "programação", "scanner"],
+        "tags": [
+          "c",
+          "segurança",
+          "antivirus",
+          "programação",
+          "scanner"
+        ],
         "published": true
       },
-      "content": "# Desenvolvendo um Scanner de Antivírus em C\n\nEstou desenvolvendo um scanner de antivírus em C como projeto para aprender mais sobre segurança cibernética e detecção de malwares. O projeto utiliza detecção por assinatura para identificar ameaças conhecidas.\n\n## Como funciona\n\nO scanner analisa arquivos procurando por padrões específicos (assinaturas) que identificam malware. A implementação inclui:\n\n- **Sistema de regras**: Carrega assinaturas de malware de um arquivo de configuração\n- **Detecção EICAR**: Suporte ao arquivo de teste padrão da indústria\n- **Scanner recursivo**: Varre diretórios completos de forma eficiente\n- **Filtros inteligentes**: Ignora diretórios desnecessários e foca em extensões suspeitas\n\n## Características principais\n\n```c\n// Exemplo de assinatura EICAR para testes\nuint8_t eicar_signature[EICAR_SIZE] = {\n    0x58,0x35,0x4F,0x21,0x50,0x25,0x40,0x41,\n    // ... padrão completo do EICAR\n};\n```\n\n### Funcionalidades implementadas\n\n- **Carregamento dinâmico de regras**: Suporte a múltiplas assinaturas de malware\n- **Otimização de performance**: Leitura em chunks com overlap para detectar padrões que cruzam blocos\n- **Diretórios ignorados**: Evita scanear node_modules, .git, e outras pastas irrelevantes\n- **Extensões focadas**: Analisa apenas arquivos com extensões potencialmente perigosas\n\n## Estrutura do projeto\n\nO scanner é organizado em funções especializadas:\n\n- `load_signatures()` - Carrega regras de detecção\n- `scan_file_rules()` - Analisa arquivo individual\n- `scan_directory()` - Varre diretórios recursivamente\n- `should_scan_file()` - Filtra extensões relevantes\n\n## Próximos passos\n\nEstou planejando adicionar:\n\n- Suporte a arquivos compactados (ZIP, RAR)\n- Detecção heurística básica\n- Logging mais detalhado\n- Interface de linha de comando mais amigável\n\n## Testando o scanner\n\nO projeto inclui um sistema de testes com arquivos de exemplo, incluindo o padrão EICAR para validação do funcionamento.\n\nÉ um projeto em andamento que tem sido excelente para aprender sobre baixo nível, segurança e processamento de arquivos em C!\n\n---\n\n*O código completo está disponível no meu GitHub. Contribuições e sugestões são bem-vindas!*",
-      "slug": "post_1762367228791"
+      "content": "# Desenvolvendo um Scanner de Antivírus em C\n\nEstou desenvolvendo um scanner de antivírus em C como projeto para aprender mais sobre segurança cibernética e detecção de malwares. O projeto utiliza detecção por assinatura para identificar ameaças conhecidas.\n\n## Como funciona\n\nO scanner analisa arquivos procurando por padrões específicos (assinaturas) que identificam malware. A implementação inclui:\n\n- **Sistema de regras**: Carrega assinaturas de malware de um arquivo de configuração\n- **Detecção EICAR**: Suporte ao arquivo de teste padrão da indústria\n- **Scanner recursivo**: Varre diretórios completos de forma eficiente\n- **Filtros inteligentes**: Ignora diretórios desnecessários e foca em extensões suspeitas\n\n## Características principais\n\n```c\n// Exemplo de assinatura EICAR para testes\nuint8_t eicar_signature[EICAR_SIZE] = {\n    0x58,0x35,0x4F,0x21,0x50,0x25,0x40,0x41,\n    // ... padrão completo do EICAR\n};\n```\n\nFuncionalidades implementadas\n\n· Carregamento dinâmico de regras: Suporte a múltiplas assinaturas de malware\n· Otimização de performance: Leitura em chunks com overlap para detectar padrões que cruzam blocos\n· Diretórios ignorados: Evita scanear node_modules, .git, e outras pastas irrelevantes\n· Extensões focadas: Analisa apenas arquivos com extensões potencialmente perigosas\n\nEstrutura do projeto\n\nO scanner é organizado em funções especializadas:\n\n· load_signatures() - Carrega regras de detecção\n· scan_file_rules() - Analisa arquivo individual\n· scan_directory() - Varre diretórios recursivamente\n· should_scan_file() - Filtra extensões relevantes\n\nPróximos passos\n\nEstou planejando adicionar:\n\n· Suporte a arquivos compactados (ZIP, RAR)\n· Detecção heurística básica\n· Logging mais detalhado\n· Interface de linha de comando mais amigável\n\nTestando o scanner\n\nO projeto inclui um sistema de testes com arquivos de exemplo, incluindo o padrão EICAR para validação do funcionamento.\n\nÉ um projeto em andamento que tem sido excelente para aprender sobre baixo nível, segurança e processamento de arquivos em C!\n\n---\n\nO código completo está disponível no meu GitHub. Contribuições e sugestões são bem-vindas!",
+      "slug": "scanner-antivirus-c"
+    },
+    {
+      "frontmatter": {
+        "id": "post_1762367228789",
+        "title": "Olá Mundo - Meu Primeiro Post",
+        "description": "Primeiro post de teste do blog estático com markdown e JSON",
+        "author": "André Moreira",
+        "github": "Andrezinrc",
+        "date": "2025-11-20",
+        "category": "tutorial",
+        "tags": [
+          "blog",
+          "markdown"
+        ],
+        "image": "",
+        "published": true
+      },
+      "content": "# Olá Mundo - Meu Primeiro Post\n\nEste é o primeiro post de teste\n## Como funciona\n\n- Posts escritos em **markdown** com frontmatter\n- Scripts JavaScript geram **JSON estático**\n- Deploy na **Vercel** como site estático\n\n## Exemplo de código\n\n```javascript\n// Script que gera os JSONs\nfunction generateBlogData() {\n  const posts = getAllMarkdownPosts();\n  return { posts, lastUpdated: new Date() };\n}",
+      "slug": "teste-de-post"
     }
   ],
-  "lastUpdated": "2025-11-22T00:00:00.000Z",
-  "totalPosts": 2
+  "lastUpdated": "2025-11-24T00:17:06.216Z",
+  "totalPosts": 3
 }

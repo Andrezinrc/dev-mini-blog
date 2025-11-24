@@ -1,16 +1,20 @@
 {
   "posts": [
     {
-      "id": "post_1762367228789",
-      "title": "Olá Mundo - Meu Primeiro Post",
-      "description": "Primeiro post de teste do blog estático com markdown e JSON",
+      "id": "post_1762458923567",
+      "title": "Do 'funciona' ao 'fica bom' - a evolução do código",
+      "description": "Como nosso código melhora naturalmente com a experiência, e está tudo bem não acertar de primeira",
       "author": "André Moreira",
       "github": "Andrezinrc",
-      "date": "2025-11-20",
+      "date": "2025-11-22",
       "image": "",
-      "category": "tutorial",
-      "tags": ["blog", "markdown"],
-      "slug": "post_1762367228789"
+      "category": "experiência",
+      "tags": [
+        "código",
+        "aprendizado",
+        "refatoração"
+      ],
+      "slug": "evolucao-do-codigo"
     },
     {
       "id": "post_1762367228791",
@@ -21,8 +25,29 @@
       "date": "2025-11-22",
       "image": "/assets/images/posts/scanner-antivirus-c/illustration.jpeg",
       "category": "projetos",
-      "tags": ["c", "segurança", "antivirus", "programação", "scanner"],
-      "slug": "post_1762367228791"
+      "tags": [
+        "c",
+        "segurança",
+        "antivirus",
+        "programação",
+        "scanner"
+      ],
+      "slug": "scanner-antivirus-c"
+    },
+    {
+      "id": "post_1762367228789",
+      "title": "Olá Mundo - Meu Primeiro Post",
+      "description": "Primeiro post de teste do blog estático com markdown e JSON",
+      "author": "André Moreira",
+      "github": "Andrezinrc",
+      "date": "2025-11-20",
+      "image": "",
+      "category": "tutorial",
+      "tags": [
+        "blog",
+        "markdown"
+      ],
+      "slug": "teste-de-post"
     }
   ]
 }
