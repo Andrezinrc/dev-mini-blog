@@ -132,15 +132,6 @@ export default function Header() {
           
           <div className={styles.controls}>
             <button 
-              className={styles.themeBtn}
-              onClick={toggleTheme}
-              aria-label="Alternar tema"
-            >
-              <FaSun className={styles.sun} />
-              <FaMoon className={styles.moon} />
-            </button>
-
-            <button 
               className={styles.menuToggle}
               onClick={toggleMenu}
               aria-label={isMenuOpen ? "Fechar pesquisa" : "Abrir pesquisa"}
@@ -191,7 +182,7 @@ export default function Header() {
         </div>
       </header>
 
-      {/* Menu Bottom Fixo */}
+      { /* Menu Bottom Fixo */ }
       <nav className={styles.menu}>
         <ul className={styles.navList}>
           <li>
@@ -205,6 +196,16 @@ export default function Header() {
               <FaBook className={styles.navIcon} />
               Posts
             </Link>
+          </li>
+          <li>
+            <button 
+              className={styles.themeBtnBottom}
+              onClick={toggleTheme}
+              aria-label="Alternar tema"
+            >
+              <FaSun className={styles.sunBottom} />
+              <FaMoon className={styles.moonBottom} />
+            </button>
           </li>
           <li>
             <Link to="/tags" className={styles.navLink}>

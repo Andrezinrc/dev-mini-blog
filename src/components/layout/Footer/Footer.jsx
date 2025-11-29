@@ -13,7 +13,6 @@ const Footer = () => {
           <div className={styles.socialLinks}>
             <a href="https://github.com/Andrezinrc" className={styles.socialLink}>GitHub</a>
             <a href="https://instagram.com/andrezin.dev" className={styles.socialLink}>Instagram</a>
-            <a href="https://andrezin-dev.vercel.app/" className={styles.socialLink}>Portfólio</a>
           </div>
         </div>
 
@@ -40,7 +39,7 @@ const Footer = () => {
       
       <div className={styles.footerBottom}>
         <p className={styles.copyright}>
-          © {new Date().getFullYear()} DreeBlog. Todos os direitos reservados.
+          © {new Date().getFullYear()} [ANDREZIN.BLOG]. Todos os direitos reservados.
         </p>
         <div className={styles.credits}>
           <p>Desenvolvido por 

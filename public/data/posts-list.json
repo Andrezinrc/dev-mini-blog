@@ -1,22 +1,6 @@
 {
   "posts": [
     {
-      "id": "post_1762458923567",
-      "title": "Do 'funciona' ao 'fica bom' - a evolução do código",
-      "description": "Como nosso código melhora naturalmente com a experiência, e está tudo bem não acertar de primeira",
-      "author": "André Moreira",
-      "github": "Andrezinrc",
-      "date": "2025-11-22",
-      "image": "",
-      "category": "experiência",
-      "tags": [
-        "código",
-        "aprendizado",
-        "refatoração"
-      ],
-      "slug": "evolucao-do-codigo"
-    },
-    {
       "id": "post_1762367228791",
       "title": "Desenvolvendo um Scanner de Antivírus em C",
       "description": "Conheça meu projeto de scanner de antivírus desenvolvido em C com detecção por assinatura e suporte a EICAR",
