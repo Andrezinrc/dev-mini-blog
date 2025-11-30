@@ -8,10 +8,6 @@ export default function Home() {
   
   return (
     <div className={styles.page}>
-      <div className={styles.banner}>
-        <img src="/assets/images/banner.jpeg" alt="Banner" />
-      </div>
-
       <section className={styles.hero}>
         <div className={styles.heroContent}>
           <h1 className={styles.title}>

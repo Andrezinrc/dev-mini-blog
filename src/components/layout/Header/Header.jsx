@@ -199,12 +199,12 @@ export default function Header() {
           </li>
           <li>
             <button 
-              className={styles.themeBtnBottom}
+              className={styles.themeBtn}
               onClick={toggleTheme}
               aria-label="Alternar tema"
             >
-              <FaSun className={styles.sunBottom} />
-              <FaMoon className={styles.moonBottom} />
+              <FaSun className={styles.sun} />
+              <FaMoon className={styles.moon} />
             </button>
           </li>
           <li>
