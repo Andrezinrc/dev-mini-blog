@@ -19,8 +19,7 @@
 }
 
 .projectItem:hover {
-  border-color: var(--border-color-hover);
-  background: var(--light-bg);
+  transform: translateY(-4px);
 }
 
 .title {
