@@ -2,13 +2,22 @@ import { useState } from 'react';
 import {questionsJS} from '../../constants/QuizJS';
 import styles from './Quiz.module.css';
 
-const Quiz = () => {
+const Quiz = ({ quizType = 'javascript' }) => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState([]);
   const [finished, setFinished] = useState(false);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   
-  const questions = questionsJS;
+  const getQuestions = () => {
+    switch(quizType) {
+      case 'javascript':
+        return questionsJS;
+      default:
+        return questionsJS;
+    }
+  };
+  
+  const questions = getQuestions();
 
   const handleAnswer = (index) => {
     setSelectedAnswer(index);

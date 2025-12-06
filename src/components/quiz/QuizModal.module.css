@@ -1,0 +1,230 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: var(--spacing);
+  animation: fadeIn 0.2s ease;
+}
+
+.modalContent {
+  background: var(--bg-white);
+  border-radius: var(--border-radius);
+  width: 100%;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  animation: slideUp 0.3s ease;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-lg);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.modalTitle {
+  color: var(--text-color);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  color: var(--text-light);
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+}
+
+.closeButton:hover {
+  color: var(--text-color);
+  background: var(--bg-gray);
+}
+
+.quizzesList {
+  padding: var(--spacing-lg);
+  overflow-y: auto;
+  flex: 1;
+}
+
+.quizCard {
+  display: flex;
+  align-items: center;
+  padding: var(--spacing);
+  border: 2px solid var(--border-color);
+  border-radius: var(--border-radius);
+  margin-bottom: var(--spacing);
+  cursor: pointer;
+  transition: var(--transition);
+  position: relative;
+}
+
+.quizCard:not(.comingSoon):hover {
+  border-color: var(--color-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.quizCard.comingSoon {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.quizIcon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #000;
+  flex-shrink: 0;
+  margin-right: var(--spacing);
+}
+
+.quizInfo {
+  flex: 1;
+}
+
+.quizTitle {
+  color: var(--text-color);
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0 0 4px 0;
+}
+
+.quizDescription {
+  color: var(--text-light);
+  font-size: 0.875rem;
+  margin: 0 0 var(--spacing-sm) 0;
+  line-height: 1.4;
+}
+
+.quizDetails {
+  display: flex;
+  gap: var(--spacing);
+}
+
+.detail {
+  font-size: 0.75rem;
+  color: var(--text-light);
+  background: var(--bg-gray);
+  padding: 2px 8px;
+  border-radius: 12px;
+}
+
+.soonBadge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: var(--color-warning);
+  color: white;
+  font-size: 0.625rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+
+.arrow {
+  color: var(--color-primary);
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-left: var(--spacing);
+  opacity: 0;
+  transform: translateX(-8px);
+  transition: var(--transition);
+}
+
+.quizCard:not(.comingSoon):hover .arrow {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.modalFooter {
+  padding: var(--spacing-lg);
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.closeModalButton {
+  background: var(--bg-gray);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  padding: 8px 24px;
+  border-radius: var(--border-radius);
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.closeModalButton:hover {
+  background: var(--border-color);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 480px) {
+  .modalContent {
+    max-height: 80vh;
+  }
+  
+  .quizCard {
+    flex-direction: column;
+    text-align: center;
+    padding: var(--spacing);
+  }
+  
+  .quizIcon {
+    margin-right: 0;
+    margin-bottom: var(--spacing);
+  }
+  
+  .quizDetails {
+    justify-content: center;
+  }
+  
+  .arrow {
+    display: none;
+  }
+}
