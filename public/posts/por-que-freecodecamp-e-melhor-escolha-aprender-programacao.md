@@ -7,7 +7,7 @@ github: "Andrezinrc"
 date: "2025-12-06"
 category: "educação"
 tags: ["freecodecamp", "aprendizado", "cursos-gratuitos", "open-source"]
-image: "/assets/images/posts/por-que-freecodecamp-e-melhor-escolha-aprender-programacao/freecodecamp-banner.png"
+image: ""
 published: true
 ---
 
@@ -101,9 +101,8 @@ Desde que foi traduzido para português, o freeCodeCamp ajudou **milhares de bra
 
 ## 🎖️ Meus certificados conquistados
 
-[![Legacy JavaScript Algorithms and Data Structures V7 Certificate](https://www.freecodecamp.org/certification/andrezin/javascript-algorithms-and-data-structures)](https://www.freecodecamp.org/certification/andrezin/javascript-algorithms-and-data-structures)
-
-[![Back End Development and APIs V8 Certificate](https://www.freecodecamp.org/certification/andrezin/back-end-development-and-apis)](https://www.freecodecamp.org/certification/andrezin/back-end-development-and-apis)
+✅ [Legacy JavaScript Algorithms and Data Structures V7](https://www.freecodecamp.org/certification/andrezin/javascript-algorithms-and-data-structures)  
+✅ [Back End Development and APIs V8](https://www.freecodecamp.org/certification/andrezin/back-end-development-and-apis)
 
 ## 🤝 Como você pode contribuir
 
