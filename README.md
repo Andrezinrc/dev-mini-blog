@@ -1,4 +1,4 @@
-# [ANDREZIN.BLOG]
+# adr_blog
 
 Blog sobre desenvolvimento de software. Posts em markdown e JSON estático.
 

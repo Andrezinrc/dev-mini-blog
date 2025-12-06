@@ -180,7 +180,7 @@
 }
 
 .themeBtn {
-  background: var(--bg-white);
+  background: transparent;
   border: 1px solid var(--border-color);
   border-radius: 50%;
   width: 40px;
@@ -194,7 +194,6 @@
 }
 
 .themeBtn:hover {
-  border-color: var(--color-primary);
   transform: scale(1.05);
 }
 
@@ -206,7 +205,7 @@
 }
 
 .sun {
-  color: var(--color-warning);
+  color: var(--text-color);
   opacity: 1;
 }
 

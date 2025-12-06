@@ -3,6 +3,7 @@
   border-top: 0.5px solid var(--border-color);
   margin-top: auto;
   padding-top: var(--spacing-lg);
+  padding-bottom: var(--spacing-lg);
 }
 
 .footerContent {

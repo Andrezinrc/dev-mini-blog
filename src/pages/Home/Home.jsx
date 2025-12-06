@@ -21,10 +21,6 @@ export default function Home() {
               <FaBook className={styles.buttonIcon} />
               Ver Posts
             </Link>
-            <Link to="/about" className={styles.secondaryButton}>
-              <FaUser className={styles.buttonIcon} />
-              Sobre Mim
-            </Link>
           </div>
         </div>
         

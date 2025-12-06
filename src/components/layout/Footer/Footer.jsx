@@ -39,7 +39,7 @@ const Footer = () => {
       
       <div className={styles.footerBottom}>
         <p className={styles.copyright}>
-          © {new Date().getFullYear()} [ANDREZIN.BLOG]. Todos os direitos reservados.
+          © {new Date().getFullYear()} Todos os direitos reservados.
         </p>
         <div className={styles.credits}>
           <p>Desenvolvido por 
