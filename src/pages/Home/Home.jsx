@@ -21,6 +21,10 @@ export default function Home() {
               <FaBook className={styles.buttonIcon} />
               Ver Posts
             </Link>
+            <Link to="/projects" className={styles.secondaryButton}>
+              <FiCode className={styles.buttonIcon} />
+              Ver Projetos
+            </Link>
           </div>
         </div>
         
