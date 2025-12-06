@@ -36,6 +36,7 @@ export default function App() {
                 <Route path="/tags/:tagName" element={<Pages.TagPosts />} />
                 <Route path="/favorites" element={<Pages.Favorites />} />
                 <Route path="/projects" element={<Pages.Projects />} />
+                <Route path="/quiz" element={<Pages.Quiz />} />
                 <Route path="*" element={<Pages.NotFound />} />
               </Routes>
             )}

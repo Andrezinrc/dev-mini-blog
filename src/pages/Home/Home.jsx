@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Home.module.css';
 import { Link } from 'react-router-dom';
 import { FaBook, FaUser, FaEdit, FaRocket, FaLightbulb, FaUsers, FaSun, FaMoon } from 'react-icons/fa';
-import { FiCode } from 'react-icons/fi';
+import { FiBookOpen, FiCode } from 'react-icons/fi';
 
 export default function Home() {
   
@@ -24,6 +24,10 @@ export default function Home() {
             <Link to="/projects" className={styles.secondaryButton}>
               <FiCode className={styles.buttonIcon} />
               Ver Projetos
+            </Link>
+            <Link to="/quiz" className={styles.secondaryButton}>
+              <FiBookOpen className={styles.buttonIcon} />
+              Quiz JavaScript
             </Link>
           </div>
         </div>

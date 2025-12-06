@@ -1,0 +1,236 @@
+.quiz {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: var(--spacing-lg);
+}
+
+.progress {
+  margin-bottom: var(--spacing-lg);
+}
+
+.progressBar {
+  height: 6px;
+  background: var(--bg-white);
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: var(--spacing-sm);
+}
+
+.currentProgress {
+  height: 100%;
+  background: var(--color-primary);
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+.counter {
+  color: var(--text-light);
+  font-size: 0.875rem;
+  margin: 0;
+  text-align: center;
+}
+
+.questionContainer {
+  background: var(--bg-white);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+  border: 1px solid var(--border-color);
+}
+
+.questionTitle {
+  color: var(--text-color);
+  font-size: 1.5rem;
+  margin-bottom: var(--spacing);
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.option {
+  padding: var(--spacing);
+  background: var(--bg-gray);
+  border: 2px solid var(--border-color);
+  border-radius: var(--border-radius);
+  color: var(--text-color);
+  font-size: 1rem;
+  text-align: left;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.option:hover {
+  border-color: var(--border-color-hover);
+  transform: translateY(-1px);
+}
+
+.option.selected {
+  border-color: var(--color-primary);
+  background: var(--light-bg);
+  color: var(--color-primary);
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nextButton {
+  background: var(--color-primary);
+  color: var(--color-white);
+  padding: 14px 32px;
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.nextButton:hover:not(.disabled) {
+  background: var(--color-primary-hover);
+  transform: translateY(-2px);
+}
+
+.nextButton.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.result {
+  background: var(--bg-white);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-lg);
+  border: 1px solid var(--border-color);
+  text-align: center;
+}
+
+.result h2 {
+  color: var(--text-color);
+  font-size: 2rem;
+  margin-bottom: var(--spacing-lg);
+}
+
+.score {
+  margin: var(--spacing-lg) 0;
+}
+
+.points {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin: 0;
+}
+
+.percentage {
+  color: var(--text-light);
+  font-size: 1.125rem;
+  margin: var(--spacing-sm) 0 var(--spacing-lg);
+}
+
+.details {
+  background: var(--bg-gray);
+  border-radius: var(--border-radius);
+  padding: var(--spacing);
+  margin: var(--spacing-lg) 0;
+  text-align: left;
+}
+
+.details h3 {
+  color: var(--text-color);
+  margin-top: 0;
+  margin-bottom: var(--spacing);
+  font-size: 1.125rem;
+}
+
+.summaryItem {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--spacing-sm) 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.summaryItem:last-child {
+  border-bottom: none;
+}
+
+.correct {
+  color: var(--color-success);
+  font-weight: 600;
+}
+
+.wrong {
+  color: var(--color-error);
+  font-weight: 600;
+}
+
+.restartButton {
+  background: var(--color-primary);
+  color: var(--color-white);
+  padding: 14px 32px;
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+  margin-top: var(--spacing);
+}
+
+.restartButton:hover {
+  background: var(--color-primary-hover);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .quiz {
+    padding: var(--spacing);
+  }
+  
+  .questionContainer {
+    padding: var(--spacing);
+  }
+  
+  .questionTitle {
+    font-size: 1.25rem;
+  }
+  
+  .option {
+    padding: 0.75rem;
+  }
+  
+  .result {
+    padding: var(--spacing);
+  }
+  
+  .points {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .questionTitle {
+    font-size: 1.125rem;
+  }
+  
+  .option {
+    padding: 0.625rem;
+    font-size: 0.875rem;
+  }
+  
+  .nextButton,
+  .restartButton {
+    padding: 12px 24px;
+    width: 100%;
+  }
+  
+  .actions {
+    justify-content: center;
+  }
+}

@@ -7,3 +7,4 @@ export {default as Tags} from '../pages/Tags/Tags';
 export {default as TagPosts} from '../pages/TagPosts/TagPosts';
 export {default as Favorites } from '../pages/Favorites/Favorites';
 export {default as Projects} from '../pages/Projects/Projects';
+export {default as Quiz} from '../pages/Quiz/Quiz';
