@@ -64,7 +64,6 @@ export default function Posts() {
         dataStructure="default"
         onRetry={handleRetry}
         emptyMessage="Nenhum post encontrado"
-        emptySubtitle="Seja o primeiro a contribuir com o blog!"
       />
       <ShareModal
         isOpen={shareModal.open}

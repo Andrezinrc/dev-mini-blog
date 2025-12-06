@@ -3,7 +3,6 @@
   border-top: 0.5px solid var(--border-color);
   margin-top: auto;
   padding-top: var(--spacing-lg);
-  padding-bottom: var(--spacing-lg);
 }
 
 .footerContent {
@@ -103,6 +102,7 @@
 .credits {
   color: var(--text-light);
   font-size: 0.9rem;
+  padding-bottom: var(--spacing-lg);
 }
 
 .devLink {
