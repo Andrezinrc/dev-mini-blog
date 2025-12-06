@@ -7,9 +7,27 @@ const QuizModal = ({ isOpen, onClose }) => {
   
   const quizzes = [
     {
+      id: 'html',
+      title: 'HTML Quiz',
+      description: '10 perguntas sobre HTML5 e semântica',
+      questionsCount: 10,
+      difficulty: 'Iniciante',
+      icon: <FiCode size={24} />,
+      color: '#e34c26'
+    },
+    {
+      id: 'css',
+      title: 'CSS Quiz',
+      description: 'Desafios de CSS moderno',
+      questionsCount: 10,
+      difficulty: 'Iniciante/Intermediário',
+      icon: <FiCode size={24} />,
+      color: '#2965f1'
+    },
+    {
       id: 'javascript',
       title: 'JavaScript Quiz',
-      description: 'Teste seus conhecimentos em JavaScript com 10 perguntas',
+      description: 'Teste seus conhecimentos em JavaScript',
       questionsCount: 10,
       difficulty: 'Iniciante/Intermediário',
       icon: <FiCode size={24} />,
@@ -18,11 +36,17 @@ const QuizModal = ({ isOpen, onClose }) => {
   ];
 
   const handleQuizSelect = (quizId) => {
-    if (quizId === 'javascript') {
-      navigate('/quiz', { state: { quizType: 'javascript' } });
+    if (quizId === 'html') {
+      navigate('/quiz', { state: { quizType: 'html' } });
       onClose();
-    }
-  };
+    } else if (quizId === 'css') {
+      navigate('/quiz', { state: { quizType: 'css' } });
+      onClose();
+    } else if (quizId === 'javascript') {
+        navigate('/quiz', { state: { quizType: 'javascript' } });
+        onClose();
+      }
+    };
 
   if (!isOpen) return null;
 

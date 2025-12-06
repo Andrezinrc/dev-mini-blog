@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import {questionsHTML} from '../../constants/QuizHTML';
+import {questionsCSS} from '../../constants/QuizCSS';
 import {questionsJS} from '../../constants/QuizJS';
 import styles from './Quiz.module.css';
 
@@ -10,10 +12,14 @@ const Quiz = ({ quizType = 'javascript' }) => {
   
   const getQuestions = () => {
     switch(quizType) {
+      case 'html':
+        return questionsHTML;
+      case 'css':
+        return questionsCSS;
       case 'javascript':
         return questionsJS;
       default:
-        return questionsJS;
+        return questionsHTML;
     }
   };
   

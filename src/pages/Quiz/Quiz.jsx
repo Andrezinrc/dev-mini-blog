@@ -6,17 +6,29 @@ const QuizPage = () => {
   const location = useLocation();
   const quizType = location.state?.quizType || 'javascript';
   
+  const quizConfig = {
+    javascript: {
+      title: 'Quiz JavaScript',
+      subtitle: 'Teste seus conhecimentos com 10 perguntas sobre JavaScript'
+    },
+    html: {
+      title: 'Quiz HTML',
+      subtitle: 'Teste seus conhecimentos com 10 perguntas sobre HTML5'
+    },
+    css: {
+      title: 'Quiz CSS',
+      subtitle: 'Teste seus conhecimentos com 10 perguntas sobre CSS'
+    }
+  };
+  
+  const config = quizConfig[quizType] || quizConfig.javascript;
+  
   return (
     <div className={styles.page}>
       <header className={styles.header}>
-        <h1 className={styles.title}>
-          {quizType === 'javascript' ? 'Quiz JavaScript' : 'Quiz'}
-        </h1>
+        <h1 className={styles.title}>{config.title}</h1>
         <p className={styles.subtitle}>
-          {quizType === 'javascript' 
-            ? 'Teste seus conhecimentos com 10 perguntas sobre JavaScript'
-            : 'Teste seus conhecimentos'
-          }
+          {config.subtitle}
         </p>
       </header>
       
