@@ -63,7 +63,7 @@ const Quiz = () => {
             <h3>Resumo:</h3>
             {answers.map((answer, idx) => (
               <div key={idx} className={styles.summaryItem}>
-                <span>Pergunta {idx + 1}:</span>
+                <span className={styles.ask}>Pergunta {idx + 1}:</span>
                 <span className={answer.userAnswer === answer.correctAnswer ? styles.correct : styles.wrong}>
                   {answer.userAnswer === answer.correctAnswer ? "✓ Acertou" : "✗ Errou"}
                 </span>

@@ -149,6 +149,10 @@
   font-size: 1.125rem;
 }
 
+.details .ask {
+  color: var(--text-color);
+}
+
 .summaryItem {
   display: flex;
   justify-content: space-between;
@@ -172,7 +176,7 @@
 
 .restartButton {
   background: var(--color-primary);
-  color: var(--color-white);
+  color: white;
   padding: 14px 32px;
   border: none;
   border-radius: var(--border-radius);
