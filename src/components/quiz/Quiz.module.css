@@ -83,7 +83,7 @@
 
 .nextButton {
   background: var(--color-primary);
-  color: var(--color-white);
+  color: white;
   padding: 14px 32px;
   border: none;
   border-radius: var(--border-radius);
