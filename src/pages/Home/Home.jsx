@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styles from './Home.module.css';
 import { Link } from 'react-router-dom';
 import { FaBook, FaLightbulb, FaRocket } from 'react-icons/fa';
-import { FiCode } from 'react-icons/fi';
+import { FiCode, FiBookOpen } from 'react-icons/fi';
 import QuizModal from '../../components/quiz/QuizModal';
 
 export default function Home() {
@@ -32,8 +32,8 @@ export default function Home() {
                 onClick={() => setIsQuizModalOpen(true)}
                 className={styles.secondaryButton}
               >
-                <FiCode className={styles.buttonIcon} />
-                Quizzes
+                <FiBookOpen className={styles.buttonIcon} />
+                Quizzes Tech
               </button>
             </div>
           </div>
