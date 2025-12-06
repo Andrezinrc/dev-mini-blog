@@ -1,6 +1,23 @@
 {
   "posts": [
     {
+      "id": "post_1762368736254",
+      "title": "Por que freeCodeCamp é a melhor escolha para aprender programação",
+      "description": "Minha experiência com a plataforma que forma milhões de desenvolvedores gratuitamente",
+      "author": "André Moreira",
+      "github": "Andrezinrc",
+      "date": "2025-12-06",
+      "image": "/assets/images/posts/por-que-freecodecamp-e-melhor-escolha-aprender-programacao/freecodecamp-banner.png",
+      "category": "educação",
+      "tags": [
+        "freecodecamp",
+        "aprendizado",
+        "cursos-gratuitos",
+        "open-source"
+      ],
+      "slug": "por-que-freecodecamp-e-melhor-escolha-aprender-programacao"
+    },
+    {
       "id": "post_1762367228791",
       "title": "Desenvolvendo um Scanner de Antivírus em C",
       "description": "Conheça meu projeto de scanner de antivírus desenvolvido em C com detecção por assinatura e suporte a EICAR",
