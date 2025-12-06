@@ -84,6 +84,17 @@ const Quiz = ({ quizType = 'javascript' }) => {
                 </span>
               </div>
             ))}
+            
+            <div className={styles.learnMore}>
+              <p>
+                Quer aprender mais HTML, CSS ou JavaScript de graça?
+                Eu recomendo muito o 
+                <a href="https://www.freecodecamp.org/" target="_blank" rel="noopener noreferrer">
+                  FreeCodeCamp
+                </a>. 
+                É 100% gratuito, open source e você ganha certificados fazendo projetos reais.
+              </p>
+            </div>
           </div>
           
           <button onClick={restartQuiz} className={styles.restartButton}>

@@ -22,6 +22,7 @@ export default function App() {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100dvh' }}>
       <Components.ScrollToTop />
+      <Components.Recommendation />
       <Components.Layout>
         <main>
           {isLoading ? (

@@ -192,6 +192,22 @@
   transform: translateY(-2px);
 }
 
+.learnMore {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+.learnMore p {
+  color: var(--text-color);
+}
+
+.learnMore a {
+  text-decoration: underline;
+  color: var(--color-primary);
+}
+
 @media (max-width: 768px) {
   .quiz {
     padding: var(--spacing);
