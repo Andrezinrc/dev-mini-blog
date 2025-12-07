@@ -1,6 +1,6 @@
 .bar {
   width: 100%;
-  background: var(--gradient-cta);
+  background: #0a0a23;
   color: white;
   padding: 10px 16px;
   display: flex;
