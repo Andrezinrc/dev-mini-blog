@@ -30,10 +30,9 @@
 
 .title {
   color: var(--text-color);
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 700;
   margin-bottom: var(--spacing);
-  line-height: 1.1;
   font-family: "Bebas Neue", sans-serif;
 }
 
@@ -194,7 +193,7 @@
   }
   
   .title {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
   
   .subtitle {
@@ -216,10 +215,6 @@
 }
 
 @media (max-width: 480px) {
-  .title {
-    font-size: 2rem;
-  }
-  
   .subtitle {
     font-size: 1rem;
   }
