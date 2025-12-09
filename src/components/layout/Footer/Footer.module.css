@@ -25,12 +25,14 @@
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: var(--spacing-sm);
-  font-family: "Bebas Neue", sans-serif;
 }
 
 .footerTitle span{
-  color: var(--color-primary);
   font-family: "Bebas Neue", sans-serif;
+  padding: 5px;
+  border-radius: 3px;
+  background: var(--color-primary);
+  color: white;
 }
 
 .footerDescription {
@@ -92,7 +94,6 @@
   text-align: center;
   background: var(--bg-gray);
 }
-
 .copyright {
   color: var(--text-light);
   font-size: 0.9rem;
