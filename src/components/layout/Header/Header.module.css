@@ -185,21 +185,42 @@
 }
 
 .themeBtn {
-  background: rgba(255, 255, 255, 0.15);
+  background: transparent;
   border: 0;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  border-radius: 12px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  gap: 4px;
   cursor: pointer;
   transition: var(--transition);
-  position: relative;
+  padding: 8px 12px;
+  color: rgba(255, 255, 255, 0.9);
+  min-width: 50px;
+}
+
+[data-theme="light"] .themeBtn {
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .themeBtn:hover {
-  transform: scale(1.05);
+  color: #fff;
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+[data-theme="light"] .themeBtn:hover {
+  color: #000;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.themeIconContainer {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .sun, .moon {
@@ -210,12 +231,10 @@
 }
 
 .sun {
-  color: var(--text-color);
   opacity: 1;
 }
 
 .moon {
-  color: var(--text-color);
   opacity: 0;
 }
 
@@ -227,6 +246,12 @@
   opacity: 1;
 }
 
+.themeLabel {
+  font-size: 0.7rem;
+  font-weight: 500;
+  transition: var(--transition);
+  white-space: nowrap;
+}
 .menuToggle {
   display: none;
   background: none;

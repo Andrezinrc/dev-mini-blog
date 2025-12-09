@@ -203,8 +203,13 @@ export default function Header() {
               onClick={toggleTheme}
               aria-label="Alternar tema"
             >
-              <FaSun className={styles.sun} />
-              <FaMoon className={styles.moon} />
+              <div className={styles.themeIconContainer}>
+                <FaSun className={styles.sun} />
+                <FaMoon className={styles.moon} />
+              </div>
+              <span className={styles.themeLabel}>
+                Tema
+              </span>
             </button>
           </li>
           <li>
