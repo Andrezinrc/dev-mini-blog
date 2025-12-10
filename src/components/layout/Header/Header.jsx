@@ -12,8 +12,12 @@ import {
   FaInfoCircle, 
   FaSearch, 
   FaTags, 
-  FaHeart } from 'react-icons/fa';
-import { blogAPI } from '../../../api';
+  FaHeart,
+  FaUser,
+  FaCode,
+  FaTerminal,
+  FaCog } from 'react-icons/fa';
+import {blogAPI} from '../../../api';
 import styles from './Header.module.css';
 
 export default function Header() {
@@ -23,6 +27,7 @@ export default function Header() {
   const [searchResults, setSearchResults] = useState([]);
   const [showResults, setShowResults] = useState(false);
   const [allPosts, setAllPosts] = useState([]);
+  const [isNavMenuOpen, setIsNavMenuOpen] = useState(false);
   
   useEffect(() => {
     loadAllPosts();
@@ -45,6 +50,10 @@ export default function Header() {
     setIsMenuOpen(false);
     setShowResults(false);
     setSearchQuery('');
+  };
+  
+  const toggleNavMenu = () => {
+    setIsNavMenuOpen(!isNavMenuOpen);
   };
   
   const handleSearch = (query) => {
@@ -70,6 +79,7 @@ export default function Header() {
     const handleEscKey = (e) => {
       if (e.key === 'Escape') {
         closeMenu();
+        setIsNavMenuOpen(false);
       }
     };
     
@@ -80,15 +90,79 @@ export default function Header() {
   return (
     <>
       <div 
-        className={`${styles.overlay} ${(isMenuOpen || showResults) ? styles.active : ''}`}
-        onClick={closeMenu}
+        className={`${styles.overlay} ${(isMenuOpen || showResults || isNavMenuOpen) ? styles.active : ''}`}
+        onClick={() => {
+          closeMenu();
+          setIsNavMenuOpen(false);
+        }}
       />
       
       <header className={styles.header}>
         <div className={styles.container}>
-          <Link to="/" className={styles.logo} onClick={closeMenu}>
-            adr <span className={styles.logoAccent}>DEV</span>
+          <button 
+            className={styles.hamburger}
+            onClick={toggleNavMenu}
+            aria-label={isNavMenuOpen ? "Fechar menu" : "Abrir menu"}
+          >
+            {isNavMenuOpen ? <FaTimes /> : <FaBars />}
+          </button>
+          
+          <Link to="/" className={styles.logo} onClick={() => {
+            closeMenu();
+            setIsNavMenuOpen(false);
+          }}>
+            <span className={styles.logoAccent}>DEV</span>
           </Link>
+
+          <nav className={`${styles.desktopNav} ${isNavMenuOpen ? styles.mobileActive : ''}`}>
+            <ul className={styles.desktopNavList}>
+              <li>
+                <Link to="/" className={styles.desktopNavLink} onClick={() => setIsNavMenuOpen(false)}>
+                  <FaHome className={styles.desktopNavIcon} />
+                  <span>Início</span>
+                </Link>
+              </li>
+              <li>
+                <Link to="/posts" className={styles.desktopNavLink} onClick={() => setIsNavMenuOpen(false)}>
+                  <FaBook className={styles.desktopNavIcon} />
+                  <span>Posts</span>
+                </Link>
+              </li>
+              <li>
+                <Link to="/projects" className={styles.desktopNavLink} onClick={() => setIsNavMenuOpen(false)}>
+                  <FaCode className={styles.desktopNavIcon} />
+                  <span>Projetos</span>
+                </Link>
+              </li>
+              <li>
+                <Link to="/terminal" className={styles.desktopNavLink} onClick={() => setIsNavMenuOpen(false)}>
+                  <FaTerminal className={styles.desktopNavIcon} />
+                  <span>Terminal</span>
+                </Link>
+              </li>
+              <li>
+                <Link to="/about" className={styles.desktopNavLink} onClick={() => setIsNavMenuOpen(false)}>
+                  <FaUser className={styles.desktopNavIcon} />
+                  <span>Sobre</span>
+                </Link>
+              </li>
+              <li>
+                <button 
+                  className={styles.desktopThemeBtn}
+                  onClick={() => {
+                    toggleTheme();
+                    setIsNavMenuOpen(false);
+                  }}
+                  aria-label="Alternar tema"
+                >
+                  <div className={styles.desktopThemeIconContainer}>
+                    {theme === 'light' ? <FaMoon /> : <FaSun />}
+                  </div>
+                  <span>Tema</span>
+                </button>
+              </li>
+            </ul>
+          </nav>
 
           <div className={styles.mainContent}>
             <div className={styles.searchContainer}>
@@ -111,7 +185,10 @@ export default function Header() {
                       key={post.frontmatter.id} 
                       to={`/post/${post.slug}?id=${post.frontmatter.id}`}
                       className={styles.searchResult}
-                      onClick={closeMenu}
+                      onClick={() => {
+                        closeMenu();
+                        setIsNavMenuOpen(false);
+                      }}
                       style={{ '--index': index }}
                     >
                       <h4 className={styles.resultTitle}>{post.frontmatter.title}</h4>
@@ -138,46 +215,6 @@ export default function Header() {
             >
               {isMenuOpen ? <FaTimes /> : <FaSearch />}
             </button>
-          </div>
-
-          {/* Menu Mobile */}
-          <div className={`${styles.mobileMenu} ${isMenuOpen ? styles.active : ''}`}>
-            <div className={styles.mobileSearchContainer}>
-              <div className={styles.mobileSearchInputWrapper}>
-                <FaSearch className={styles.mobileSearchIcon} />
-                <input
-                  type="text"
-                  placeholder="Buscar posts..."
-                  value={searchQuery}
-                  onChange={(e) => handleSearch(e.target.value)}
-                  className={styles.mobileSearchInput}
-                  onFocus={() => searchQuery.length > 2 && setShowResults(true)}
-                />
-              </div>
-            </div>
-            
-            <div className={`${styles.mobileSearchResults} ${showResults ? styles.active : ''}`}>
-              {searchResults.length > 0 ? (
-                searchResults.map((post, index) => (
-                  <Link 
-                    key={post.frontmatter.id} 
-                    to={`/post/${post.slug}?id=${post.frontmatter.id}`}
-                    className={styles.mobileSearchResult}
-                    onClick={closeMenu}
-                    style={{ '--index': index }}
-                  >
-                    <h4 className={styles.mobileResultTitle}>{post.frontmatter.title}</h4>
-                    <p className={styles.mobileResultDescription}>{post.frontmatter.description}</p>
-                  </Link>
-                ))
-              ) : (
-                searchQuery.length > 2 && (
-                  <div className={styles.mobileNoResults}>
-                    Nenhum post encontrado
-                  </div>
-                )
-              )}
-            </div>
           </div>
         </div>
       </header>
