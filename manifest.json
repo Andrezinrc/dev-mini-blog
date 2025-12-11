@@ -1,0 +1,20 @@
+{
+  "short_name": "Upcoded",
+  "name": "Blog Upcoded",
+  "icons": [
+    {
+      "src": "/assets/images/logo.jpeg",
+      "type": "image/jpeg",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/assets/images/logo.jpeg",
+      "type": "image/jpeg",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000"
+}

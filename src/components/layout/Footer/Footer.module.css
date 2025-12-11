@@ -21,11 +21,18 @@
 }
 
 .footerTitle {
-  color: var(--text-color);
   font-size: 1.5rem;
-  font-weight: 700;
+  color: var(--text-color);
+  text-decoration: none;
+  transition: var(--transition);
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  user-select: none;
   margin-bottom: var(--spacing-sm);
-  font-family: 'Inter', sans-serif;
+}
+
+.footerTitle span.o {
+  color: var(--color-primary);
 }
 
 .footerDescription {
