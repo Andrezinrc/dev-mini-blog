@@ -41,13 +41,14 @@
   color: var(--text-color);
   text-decoration: none;
   transition: var(--transition);
+  font-family: 'Inter', sans-serif;
 }
 
 .logo:hover {
   transform: scale(1.05);
 }
 .logo span {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   padding: 5px;
   border-radius: 3px;
   background: var(--color-primary);

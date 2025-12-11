@@ -14,7 +14,7 @@ export default function Home() {
         <section className={styles.hero}>
           <div className={styles.heroContent}>
             <h1 className={styles.title}>
-              Fala, Dev!
+              Hello, World!
             </h1>
             <p className={styles.subtitle}>
               Bem-vindo ao seu novo cantinho de código e café

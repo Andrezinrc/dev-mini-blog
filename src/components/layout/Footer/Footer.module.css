@@ -25,10 +25,11 @@
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: var(--spacing-sm);
+  font-family: 'Inter', sans-serif;
 }
 
 .footerTitle span{
-  font-family: "Bebas Neue", sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   padding: 5px;
   border-radius: 3px;
   background: var(--color-primary);
