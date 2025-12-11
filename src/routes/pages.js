@@ -1,3 +1,4 @@
+export {default as HelloWorld} from '../HelloWorld';
 export {default as NotFound} from '../pages/NotFound/NotFound';
 export {default as About } from '../pages/About/About';
 export {default as Home} from '../pages/Home/Home';

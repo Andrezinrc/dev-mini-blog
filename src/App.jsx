@@ -29,7 +29,8 @@ export default function App() {
             <Components.Load />
           ) : (
               <Routes>
-                <Route path="/" element={<Pages.Home />} replace />
+                <Route path="/helloworld" element={<Pages.HelloWorld />} />
+                <Route path="/" element={<Pages.Home />} />
                 <Route path="/about" element={<Pages.About />} />
                 <Route path="/posts" element={<Pages.Posts />} />
                 <Route path="/post/:slug" element={<Pages.Post />} />

@@ -12,10 +12,6 @@ function NotFound() {
         </p>
         
         <div className={styles['action-buttons']}>
-          <Link to="/" className={styles['home-button']}>
-            Voltar para a página inicial
-          </Link>
-          
           <button 
             onClick={() => window.history.back()} 
             className={styles['back-button']}

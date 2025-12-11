@@ -9,10 +9,8 @@
 
 .not-found-content {
   text-align: center;
-  background: var(--bg-white);
   padding: var(--spacing-lg);
   border-radius: var(--border-radius);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
   max-width: 480px;
   width: 100%;
   transition: var(--transition);
