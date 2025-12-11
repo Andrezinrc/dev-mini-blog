@@ -135,12 +135,6 @@ export default function Header() {
                 </Link>
               </li>
               <li>
-                <Link to="/terminal" className={styles.desktopNavLink} onClick={() => setIsNavMenuOpen(false)}>
-                  <FaTerminal className={styles.desktopNavIcon} />
-                  <span>Terminal</span>
-                </Link>
-              </li>
-              <li>
                 <Link to="/about" className={styles.desktopNavLink} onClick={() => setIsNavMenuOpen(false)}>
                   <FaUser className={styles.desktopNavIcon} />
                   <span>Sobre</span>
@@ -215,6 +209,48 @@ export default function Header() {
             >
               {isMenuOpen ? <FaTimes /> : <FaSearch />}
             </button>
+          </div>
+          
+          <div className={`${styles.mobileMenu} ${isMenuOpen ? styles.active : ''}`}>
+            <div className={styles.mobileSearchContainer}>
+              <div className={styles.mobileSearchInputWrapper}>
+                <FaSearch className={styles.mobileSearchIcon} />
+                <input
+                  type="text"
+                  placeholder="Buscar posts..."
+                  value={searchQuery}
+                  onChange={(e) => handleSearch(e.target.value)}
+                  className={styles.mobileSearchInput}
+                  onFocus={() => searchQuery.length > 2 && setShowResults(true)}
+                />
+              </div>
+            </div>
+            
+            <div className={`${styles.mobileSearchResults} ${showResults ? styles.active : ''}`}>
+              {searchResults.length > 0 ? (
+                searchResults.map((post, index) => (
+                  <Link 
+                    key={post.frontmatter.id} 
+                    to={`/post/${post.slug}?id=${post.frontmatter.id}`}
+                    className={styles.mobileSearchResult}
+                    onClick={() => {
+                      closeMenu();
+                      setIsNavMenuOpen(false);
+                    }}
+                    style={{ '--index': index }}
+                  >
+                    <h4 className={styles.mobileResultTitle}>{post.frontmatter.title}</h4>
+                    <p className={styles.mobileResultDescription}>{post.frontmatter.description}</p>
+                  </Link>
+                ))
+              ) : (
+                searchQuery.length > 2 && (
+                  <div className={styles.mobileNoResults}>
+                    Nenhum post encontrado
+                  </div>
+                )
+              )}
+            </div>
           </div>
         </div>
       </header>
