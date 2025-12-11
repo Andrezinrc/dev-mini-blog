@@ -47,13 +47,7 @@
 .logo:hover {
   transform: scale(1.05);
 }
-.logo span {
-  font-family: 'Space Grotesk', sans-serif;
-  padding: 5px;
-  border-radius: 3px;
-  background: var(--color-primary);
-  color: white;
-}
+
 .logoAccent {
   color: var(--color-primary);
   font-family: "Bebas Neue", sans-serif;

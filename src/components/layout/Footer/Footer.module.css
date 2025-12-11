@@ -28,14 +28,6 @@
   font-family: 'Inter', sans-serif;
 }
 
-.footerTitle span{
-  font-family: 'Space Grotesk', sans-serif;
-  padding: 5px;
-  border-radius: 3px;
-  background: var(--color-primary);
-  color: white;
-}
-
 .footerDescription {
   color: var(--text-light);
   line-height: 1.6;

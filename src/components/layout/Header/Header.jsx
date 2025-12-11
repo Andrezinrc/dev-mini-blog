@@ -111,7 +111,7 @@ export default function Header() {
             closeMenu();
             setIsNavMenuOpen(false);
           }}>
-            codeUp <span className={styles.logoAccent}>DEV</span>
+            upcoded
           </Link>
 
           <nav className={`${styles.desktopNav} ${isNavMenuOpen ? styles.mobileActive : ''}`}>
