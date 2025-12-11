@@ -2,6 +2,7 @@ import { useState } from 'react';
 import {questionsHTML} from '../../constants/QuizHTML';
 import {questionsCSS} from '../../constants/QuizCSS';
 import {questionsJS} from '../../constants/QuizJS';
+import {questionsReact} from '../../constants/QuizREACT';
 import styles from './Quiz.module.css';
 
 const Quiz = ({ quizType = 'javascript' }) => {
@@ -18,6 +19,8 @@ const Quiz = ({ quizType = 'javascript' }) => {
         return questionsCSS;
       case 'javascript':
         return questionsJS;
+      case 'react':
+        return questionsReact;
       default:
         return questionsHTML;
     }

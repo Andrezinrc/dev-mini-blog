@@ -32,6 +32,15 @@ const QuizModal = ({ isOpen, onClose }) => {
       difficulty: 'Iniciante/Intermediário',
       icon: <FiCode size={24} />,
       color: '#f7df1e'
+    },
+    {
+      id: 'react',
+      title: 'React Quiz',
+      description: 'Componentes, Hooks e conceitos fundamentais',
+      questionsCount: 10,
+      difficulty: 'Intermediário',
+      icon: <FiCode size={24} />,
+      color: '#61dafb'
     }
   ];
 
@@ -44,6 +53,9 @@ const QuizModal = ({ isOpen, onClose }) => {
       onClose();
     } else if (quizId === 'javascript') {
         navigate('/quiz', { state: { quizType: 'javascript' } });
+        onClose();
+      } else if (quizId === 'react') {
+        navigate('/quiz', { state: { quizType: 'react' } });
         onClose();
       }
     };

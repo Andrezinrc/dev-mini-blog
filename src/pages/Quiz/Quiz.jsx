@@ -18,6 +18,10 @@ const QuizPage = () => {
     css: {
       title: 'Quiz CSS',
       subtitle: 'Teste seus conhecimentos com 10 perguntas sobre CSS'
+    },
+    react: {
+      title: 'Quiz React',
+      subtitle: 'Teste seus conhecimentos com 10 perguntas sobre React JS'
     }
   };
   
