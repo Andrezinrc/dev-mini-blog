@@ -43,8 +43,11 @@
   font-weight: bold;
   user-select: none;
 }
-.logo span.o {
-  color: var(--color-primary);
+.logo span.adr {
+  color: white;
+  padding: 3px;
+  border-bottom: 2px solid var(--color-primary);
+  border-radius: 0;
 }
 .logo:hover {
   transform: scale(1.05);
