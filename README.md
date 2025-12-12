@@ -1,5 +1,7 @@
 # adr_blog
 
+![Logo do blog](public/assets/images/logo.jpeg)
+
 Blog sobre desenvolvimento de software. Posts em markdown e JSON estático.
 
 [![React 18](https://img.shields.io/badge/React-18.2.0-61dafb?logo=react)](https://reactjs.org/)
@@ -12,9 +14,11 @@ Blog sobre desenvolvimento de software. Posts em markdown e JSON estático.
 npm run post:create "Meu Post"
 npm run build:blog
 ```
+
 ## License
 
-Este projeto está sob a licença MIT.
+Copyright (c) 2025 André Moreira  
+All rights reserved.
 
 [LICENSE](LICENSE)
 
