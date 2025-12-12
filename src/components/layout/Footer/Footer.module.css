@@ -31,12 +31,6 @@
   margin-bottom: var(--spacing-sm);
 }
 
-.footerTitle span.adr {
-  color: white;
-  padding: 3px;
-  border-bottom: 2px solid var(--color-primary);
-  border-radius: 0;
-}
 .footerDescription {
   color: var(--text-light);
   line-height: 1.6;

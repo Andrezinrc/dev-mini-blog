@@ -111,7 +111,7 @@ export default function Header() {
             closeMenu();
             setIsNavMenuOpen(false);
           }}>
-            <span className={styles.adr}>Adr</span>Code
+            AdrCode
           </Link>
 
           <nav className={`${styles.desktopNav} ${isNavMenuOpen ? styles.mobileActive : ''}`}>

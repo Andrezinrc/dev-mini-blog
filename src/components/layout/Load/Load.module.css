@@ -5,7 +5,7 @@
   width: 100%;
   height: 100dvh;
   z-index: 10000;
-  background: var(--light-bg);
+  background: var(--bg-gray);
   backdrop-filter: blur(5px);
   display: flex;
   align-items: center;
