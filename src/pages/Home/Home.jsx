@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from './Home.module.css';
 import { Link } from 'react-router-dom';
-import { FaBook, FaLightbulb, FaRocket } from 'react-icons/fa';
+import { FaUsers, FaBook, FaLightbulb, FaRocket } from 'react-icons/fa';
 import { FiCode, FiBookOpen } from 'react-icons/fi';
 import QuizModal from '../../components/quiz/QuizModal';
 
@@ -49,6 +49,11 @@ export default function Home() {
             <FaRocket className={styles.featureIcon} />
             <h3>Projetos Reais</h3>
             <p>Experiências práticas do dia a dia</p>
+          </div>
+          <div className={styles.feature}>
+            <FaUsers className={styles.featureIcon} />
+            <h3>Comunidade</h3>
+            <p>Troca de experiências e networking</p>
           </div>
         </section>
       </div>
