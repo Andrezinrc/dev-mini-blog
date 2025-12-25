@@ -474,8 +474,11 @@
   height: 60px;
   position: fixed;
   bottom: 0;
+  left: 0;
+  right: 0;
   background: var(--bg-white);
-  border: 1px solid var(--border-color);
+  border-top: 0.5px solid var(--border-color);
+  border-radius: 0;
   padding: 10px 25px;
   display: flex;
   justify-content: center;
@@ -645,11 +648,9 @@
   }
 
   .menu {
-    width: 95%;
-    max-width: 350px;
     height: 55px;
-    bottom: 15px;
     padding: 8px 20px;
+    border-radius: 0;
   }
 
   .navList {
@@ -705,12 +706,12 @@
   }
   
   .menu {
-    width: 92%;
-    max-width: 320px;
+    width: 100%;
+    max-width: none;
     height: 50px;
-    bottom: 12px;
+    bottom: 0;
     padding: 6px 15px;
-    border-radius: 18px;
+    border-radius: 0;
   }
 
   .navList {
@@ -731,12 +732,6 @@
 }
 
 @media (max-width: 360px) {
-  .menu {
-    width: 90%;
-    max-width: 280px;
-    padding: 5px 12px;
-  }
-
   .navList {
     gap: 8px;
   }
