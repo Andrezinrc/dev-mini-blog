@@ -111,7 +111,7 @@ export default function Header() {
             closeMenu();
             setIsNavMenuOpen(false);
           }}>
-            AdrCode
+            <span>&#123;</span>andre_code<span>&#125;</span>
           </Link>
 
           <nav className={`${styles.desktopNav} ${isNavMenuOpen ? styles.mobileActive : ''}`}>
@@ -126,18 +126,6 @@ export default function Header() {
                 <Link to="/posts" className={styles.desktopNavLink} onClick={() => setIsNavMenuOpen(false)}>
                   <FaBook className={styles.desktopNavIcon} />
                   <span>Posts</span>
-                </Link>
-              </li>
-              <li>
-                <Link to="/projects" className={styles.desktopNavLink} onClick={() => setIsNavMenuOpen(false)}>
-                  <FaCode className={styles.desktopNavIcon} />
-                  <span>Projetos</span>
-                </Link>
-              </li>
-              <li>
-                <Link to="/about" className={styles.desktopNavLink} onClick={() => setIsNavMenuOpen(false)}>
-                  <FaUser className={styles.desktopNavIcon} />
-                  <span>Sobre</span>
                 </Link>
               </li>
               <li>

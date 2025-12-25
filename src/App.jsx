@@ -31,13 +31,11 @@ export default function App() {
               <Routes>
                 <Route path="/helloworld" element={<Pages.HelloWorld />} />
                 <Route path="/" element={<Pages.Home />} />
-                <Route path="/about" element={<Pages.About />} />
                 <Route path="/posts" element={<Pages.Posts />} />
                 <Route path="/post/:slug" element={<Pages.Post />} />
                 <Route path="/tags" element={<Pages.Tags />} />
                 <Route path="/tags/:tagName" element={<Pages.TagPosts />} />
                 <Route path="/favorites" element={<Pages.Favorites />} />
-                <Route path="/projects" element={<Pages.Projects />} />
                 <Route path="/quiz" element={<Pages.Quiz />} />
                 <Route path="*" element={<Pages.NotFound />} />
               </Routes>

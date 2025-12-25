@@ -6,7 +6,9 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.footerContent}>
         <div className={styles.footerSection}>
-          <h3 className={styles.footerTitle}>AdrCode</h3>
+          <h3 className={styles.footerTitle}>
+            <span>&#123;</span>andre_code<span>&#125;</span>
+          </h3>
           <p className={styles.footerDescription}>
             Compartilhando conhecimento e experiências através da tecnologia e desenvolvimento.
           </p>
@@ -20,20 +22,10 @@ const Footer = () => {
           <h4 className={styles.sectionTitle}>Mapa do blog</h4>
           <nav className={styles.footerNav}>
             <Link to="/" className={styles.footerLink}>Home</Link>
-            <Link to="/about" className={styles.footerLink}>Sobre</Link>
             <Link to="/posts" className={styles.footerLink}>Blog</Link>
             <Link to="/tags" className={styles.footerLink}>Tags</Link>
             <Link to="/favorites" className={styles.footerLink}>Favoritos</Link>
           </nav>
-        </div>
-        
-        <div className={styles.footerSection}>
-          <h4 className={styles.sectionTitle}>Contato</h4>
-          <p className={styles.contactInfo}>
-            <a href="mailto:dev.contactandre@gmail.com" className={styles.footerLink}>
-              dev.contactandre@gmail.com
-            </a>
-          </p>
         </div>
       </div>
       
