@@ -19,7 +19,7 @@
 
 .header {
   background: var(--bg-white);
-  border-bottom: 0.5px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -477,7 +477,7 @@
   left: 0;
   right: 0;
   background: var(--bg-white);
-  border-top: 0.5px solid var(--border-color);
+  border-top: 1px solid var(--border-color);
   border-radius: 0;
   padding: 10px 25px;
   display: flex;
