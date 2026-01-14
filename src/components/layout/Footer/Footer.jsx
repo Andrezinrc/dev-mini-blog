@@ -7,7 +7,7 @@ const Footer = () => {
       <div className={styles.footerContent}>
         <div className={styles.footerSection}>
           <h3 className={styles.footerTitle}>
-            dev
+            Dev Mini Blog
           </h3>
           <p className={styles.footerDescription}>
             Compartilhando conhecimento e experiências através da tecnologia e desenvolvimento.
