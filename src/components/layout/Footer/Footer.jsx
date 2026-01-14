@@ -7,14 +7,14 @@ const Footer = () => {
       <div className={styles.footerContent}>
         <div className={styles.footerSection}>
           <h3 className={styles.footerTitle}>
-            <span>&#123;</span>andre_code<span>&#125;</span>
+            dev
           </h3>
           <p className={styles.footerDescription}>
             Compartilhando conhecimento e experiências através da tecnologia e desenvolvimento.
           </p>
           <div className={styles.socialLinks}>
-            <a href="https://github.com/Andrezinrc" className={styles.socialLink}>GitHub</a>
-            <a href="https://instagram.com/andrezin.dev" className={styles.socialLink}>Instagram</a>
+            <a href="https://github.com/user" className={styles.socialLink}>GitHub</a>
+            <a href="https://instagram.com/user" className={styles.socialLink}>Instagram</a>
           </div>
         </div>
 
@@ -30,9 +30,6 @@ const Footer = () => {
       </div>
       
       <div className={styles.footerBottom}>
-        <p className={styles.copyright}>
-          © {new Date().getFullYear()} Todos os direitos reservados.
-        </p>
         <div className={styles.credits}>
           <p>Desenvolvido por 
             <a href="https://andrecode.vercel.app" className={styles.devLink}>

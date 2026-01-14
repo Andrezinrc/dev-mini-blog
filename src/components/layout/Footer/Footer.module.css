@@ -31,10 +31,6 @@
   margin-bottom: var(--spacing-sm);
 }
 
-.footerTitle span {
-  color: var(--color-primary);
-}
-
 .footerDescription {
   color: var(--text-light);
   line-height: 1.6;

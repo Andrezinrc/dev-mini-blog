@@ -1,6 +1,6 @@
 {
-  "short_name": "AdrCode",
-  "name": "Blog AdrCode",
+  "short_name": "dev-mini-blog",
+  "name": "dev-mini-blog",
   "icons": [
     {
       "src": "/assets/images/logo.jpeg",

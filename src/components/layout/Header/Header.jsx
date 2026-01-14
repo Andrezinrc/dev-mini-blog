@@ -111,7 +111,7 @@ export default function Header() {
             closeMenu();
             setIsNavMenuOpen(false);
           }}>
-            <span>&#123;</span>andre_code<span>&#125;</span>
+            dev
           </Link>
 
           <nav className={`${styles.desktopNav} ${isNavMenuOpen ? styles.mobileActive : ''}`}>

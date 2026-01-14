@@ -1,6 +1,4 @@
-# adr_blog
-
-![Logo do blog](public/assets/images/logo.jpeg)
+# dev-mini-blog
 
 Blog sobre desenvolvimento de software. Posts em markdown e JSON estático.
 
@@ -16,9 +14,7 @@ npm run build:blog
 
 ## License
 
-Copyright (c) 2025 André Moreira  
-All rights reserved.
-
+MIT © 2025 André Moreira
 [LICENSE](LICENSE)
 
 ---
