@@ -1,3 +1,19 @@
 {
-  "posts": []
+  "posts": [
+    {
+      "id": "post_1700000000000",
+      "title": "Hello World",
+      "description": "Meu primeiro post no blog",
+      "author": "André Moreira",
+      "github": "Andrezinrc",
+      "date": "2026-01-18",
+      "image": "",
+      "category": "geral",
+      "tags": [
+        "hello-world",
+        "primeiro-post"
+      ],
+      "slug": "hello-world"
+    }
+  ]
 }

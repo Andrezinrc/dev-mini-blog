@@ -1,0 +1,20 @@
+{
+  "frontmatter": {
+    "id": "post_1700000000000",
+    "title": "Hello World",
+    "slug": "hello-world",
+    "description": "Meu primeiro post no blog",
+    "author": "André Moreira",
+    "github": "Andrezinrc",
+    "date": "2026-01-18",
+    "image": "",
+    "category": "geral",
+    "tags": [
+      "hello-world",
+      "primeiro-post"
+    ],
+    "published": true
+  },
+  "content": "# Hello World 👋\n\nBem-vindo ao meu blog!\n\nEste é o **primeiro post**, criado apenas para validar a estrutura do projeto e confirmar que tudo está funcionando corretamente.\n\n## 🚀 O que você vai encontrar aqui?\n\n- Tutoriais\n- Dicas de programação\n- Experimentos e aprendizados\n- Projetos pessoais\n\n## 🛠 Tecnologias\n\nEste blog foi construído utilizando:\n\n- JavaScript\n- Markdown\n- React.js\n\n## 📌 Próximos passos\n\n- Criar novos posts\n- Ajustar layout\n- Publicar conteúdo real\n\n---\n\n*Post criado como teste inicial.*",
+  "slug": "hello-world"
+}
